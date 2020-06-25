@@ -1,0 +1,150 @@
+/* 默认样式清零 */
+*{
+    margin: 0px;/*外边距清零*/
+    padding: 0;/*内边距清零*/
+}
+/* 主体内容样式 */
+body{
+    font-size: 16px;/*字体大小*/
+    color: #673929;/*颜色*/
+}
+#container{
+    width: 900px;/*宽度*/
+    margin: 0 auto;/*上下外边距为零，左右外边距一样也就是居中*/
+}
+#header{
+    height: 220px;/*高度*/
+    margin-bottom: 5px;/*外边距 底下的距离*/
+    position: relative;/*父元素相对定位*/
+}
+#icon-list{
+    position: absolute;/*对父元素绝对定位*/
+    top: 190px;/*距离父元素上方170像素*/
+    right: 10px;/*距离父元素右侧30像素*/
+    width: 130px;/*130像素宽*/
+    height: 30px;/*高度30像素*/
+    /* font-size: 0px; /*去除图片间隙 */
+}
+#header img{
+    margin: 3px;
+}
+#nav{
+    height:30px;
+    line-height: 30px;/*由于高度是三十像素，所以把文字行高也设置为30像素。相当于文字居中*/
+    margin: 5px;
+    background-color:#09c;/*背景颜色*/
+    font: 18px/30px;/*18像素 30像素行高*/
+    color: white;
+    letter-spacing: 2px;/*字体间距*/
+    text-align: center;/*文本居中对齐*/
+}
+a:link{/*还没访问的超链接*/
+    color: white;
+    text-decoration: none;/*没有下划线*/
+}
+a:visited{/*访问过的超链接*/
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{/*鼠标悬停的状态*/
+    color: yellow;
+    text-decoration: none;
+}
+a:active{/*链接激活时候*/
+    color: yellow;
+}
+/*四个超链接都设置了没有下划线，可以统一设置导航栏下的a标签
+#nav a{  
+    text-decoration: none;
+}*/
+#main{
+    background-color: black;
+    /*height: 2050px;*/
+}
+#aside{
+    float: left;/*向左浮动*/
+    width: 300px;
+    /* height: 500px; */
+    background-color: #6cf;
+    text-align: center;
+    font-size: 14px;/*字体大小*/
+}
+#aside h1{
+    margin: 20px auto;
+    text-shadow: 0px 0px 3px #ff0000;/*偏移然后模糊*/
+}
+table{
+    margin: 0px 0px 10px 0px;
+}
+#mytb td{
+    padding: 0px 2px;
+    white-space: nowrap;/*文字不换行*/
+}
+#imglist{
+    width: 130px;
+    margin: 0px auto;
+}
+.pol{/*class样式 多次引用*/
+    width: 85px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #bfbfbf;
+    box-shadow:2px 2px 4px #aaa;/*定义盒子的阴影，也就是图片所在区域的投影→
+    往左偏移两像素，往上偏移2像素 模糊范围4像素*/
+    border-radius: 5px;/*定义五像素的圆角*/
+}
+#imglist img{
+    height: 95px;
+    width: 85px;
+    margin: 10px auto;
+}
+.rotate-left{
+    transform: rotate(7deg)
+}
+.rotate-right{
+    transform: rotate(-7deg);
+}
+#content{
+    float: right;
+    width: 595px;
+    /* 去掉后相当于内容决定高度 */
+    /*height: 2050px;*/
+    margin-bottom: 5px;
+    background-color: #cff;  
+}
+.subcon{
+    width: 570px;
+    margin: 10px auto;
+    /*margin 设置了上下编剧为10  上下会重叠 也就是两个图片上下的边距 也只有10px*/
+    clear: both;
+}
+.subcon img{
+    margin: 5px;/*上下左右都是为5px 外边距*/
+    padding: 5px;/*上下左右都是为5px 内边距*/
+    float: left;
+    border: 1px dashed #000;/*一像素黑色的 虚线边框 实现为soild*/
+}
+.subcon .subtext{/*subcon下的subtext样式*/
+    width: 60%;/*父元素的60%宽度*/
+    float: right;/*向右浮动*/
+    margin: 5px;
+}
+.subcon h2{
+    margin: 5px;
+}
+.subcon p{
+    font: 16px/2em;/*16像素两倍行高*/
+}
+#footer{
+    height: 60px;
+    line-height: 60px;/*行高*/
+    background-color: #6cf;
+    clear: both;/*清除左右浮动*/
+    text-align: center;
+}
+#l-fix{
+    position:fixed;/*固定定位：相当于对于浏览器的定位*/
+    top: 100px ;/*对于浏览器上方距离100像素*/
+    left: 50px;/*左侧距离50像素*/
+}
